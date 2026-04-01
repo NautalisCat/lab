@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# takes an argument (fruit) and tells you it's color
+
+if [[ -z ${1} ]]; then
+	exit 1
+fi
+
+case ${1} in
+	apple)
+	echo "${1} has a red color. Well, if its a red-delicious."
+	;;
+	banana)
+	echo "${1} has a yellow color."
+	;;
+	kiwi)
+	echo "${1} has a green color but can also be gold/yellow."
+	;;
+	*)
+	echo "${1} is an unknown fruit"
+	exit 1
+	;;
+esac

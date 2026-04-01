@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#lists all files in ~/dotfile directory, skips if not a regular file
+
+for file in ~/dotfiles/* ~/dotfiles/.*; do
+	[[ -f "${file}" && "${file}" == .* ]] || continue
+	echo "Filename: ${file}"
+done
