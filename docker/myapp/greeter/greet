@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#this is used to test out scripts with docker. Making a containorized script.
+echo "================================"
+echo "  ${GREETING:-Hello}, ${NAME:-World}!"
+echo "  Running in container: $(hostname)"
+echo "================================"
+
